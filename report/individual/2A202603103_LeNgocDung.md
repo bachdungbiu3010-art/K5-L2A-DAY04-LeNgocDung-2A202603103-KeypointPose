@@ -68,8 +68,6 @@ Số skeleton theo file xuất `src/exports/`.
 | | | | | | |
 | | | | | | |
 
-Danh sách điểm đã sửa so với bản máy (lập bằng script so file xuất với bản máy):
-
 | Ảnh | Người / mặt | Điểm | Thay đổi |
 |---|---|---|---|
 | 000000309169 (crowd) | người 2 | left_elbow, left_wrist | dời 35 px, 47 px |
@@ -109,12 +107,20 @@ Hai job đã chuyển sang completed trên CVAT? Đúng
 
 Dán phần **TÓM TẮT** in ra từ `src/check_submission.py`:
 
-```text
-(dán ở đây sau khi chạy python lab.py export)
-```
-
-Các `[CẢNH BÁO]` còn giữ nguyên và lý do:
-
+----- TÓM TẮT (dán vào báo cáo mục 5) -----
+- File person: LeNgocDung_persons.zip
+  Số ảnh: 12 · số skeleton `person`: 20 · mỗi annotation 51 số
+  Skeleton theo ảnh: 000000007281=2, 000000109010=2, 000000157271=2, 000000294329=1, 000000294379=1, 000000309169=3, 000000311497=2, 000000349521=1, 000000359340=2, 000000391222=2, 000000399983=1, 000000493741=1
+  Cờ v: v=2 288 (85%) · v=1 10 (3%) · v=0 42 (12%)
+  num_keypoints trung bình: 14.9
+- File face: LeNgocDung_faces.zip
+  Số ảnh: 8 · số skeleton `face`: 8 · mỗi annotation 39 số
+  Skeleton theo ảnh: face_137371=1, face_141135=1, face_257657=1, face_300399=1, face_380754=1, face_405456=1, face_449454=1, face_560526=1
+  Cờ v: v=2 88 (85%) · v=1 0 (0%) · v=0 16 (15%)
+  num_keypoints trung bình: 11.0
+- Ghi chú: 20 điểm v = 0 vẫn mang tọa độ cũ (CVAT 2.x xuất như vậy; chuẩn COCO ghi 0, 0). Không phải lỗi: điểm v = 0 bị bỏ qua khi huấn luyện và khi chấm.
+- Số [LỖI]: 0 · số [CẢNH BÁO]: 2
+Kết quả: ĐẠT (đọc lại từng cảnh báo ở trên)
 ___
 
 ## 6. Ảnh chụp màn hình
