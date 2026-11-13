@@ -7,7 +7,7 @@ Dữ liệu: 12 ảnh người COCO val2017 (Lin et al., 2014) và 8 ảnh chân
 - Họ tên: Lê Ngọc Dung
 - MSSV: 2A202603103
 - Email: bachdungbiu3010@gmail.com
-- Link repository: https://github.com/bachdungbiu3010-art/K5-L2-DAY04-LeNgocDung-2A202603103-KeypointPose
+- Link repository: https://github.com/bachdungbiu3010-art/K5-L2A-DAY04-LeNgocDung-2A202603103-KeypointPose
 - Phiên bản CVAT (Help → About): v2.82.0 (cài bằng `git clone --branch v2.82.0`)
 - Bộ ảnh (`src/exports/assignment.json` do `lab.py setup` tạo): có (12 ảnh người, 8 ảnh mặt)
 - Giờ bắt đầu: 17h
@@ -25,8 +25,6 @@ Mẫu `person` dựng theo người quay mặt về camera (các điểm `left_*
 Cách đổi cờ `occluded` / `outside` cho **một điểm** trên phiên bản CVAT này (một câu):
 
 Rê chuột vào đúng điểm cho sáng lên rồi bấm `Q` để thành `occluded` (`v = 1`) hoặc `O` để thành `outside` (`v = 0`); chuột phải vào điểm cũng mở menu có các nút này.
-
-> Kiểm lại trên CVAT của mình trước khi giữ các câu trả lời mục 1.
 
 ## 2. Số lượng đã gán và thời gian (CP1, CP2)
 
@@ -168,5 +166,4 @@ Nguồn ảnh: COCO val2017 / Wikimedia Commons.
 ## 9. Tài liệu tham khảo và công cụ AI đã dùng
 
 - `docs/GUIDELINE.md`, `docs/CVAT_CHEATSHEET.md`, `docs/COCO_KEYPOINTS.md` của đề.
-- **Claude (Anthropic):** hướng dẫn cài WSL, Docker, CVAT local; viết script gán nháp `tools/prelabel_pose.py`; soạn khung báo cáo này và chuyển bản Word sang Markdown; lập bằng script danh sách điểm đã sửa so với bản máy (mục 0b, mục 4) và kiểm file xuất (mục 5). Mục 3, 4, 7 tôi tự điền, nhưng có dùng ví dụ và mẫu câu Claude đưa khi hướng dẫn: dòng `000000359340` ở mục 3, đoạn "phân vân" ở mục 4 và câu 3 của mục 7.
-- **YOLO11x-pose (Ultralytics)** và **dlib shape predictor 68 điểm** (gói `face_recognition_models`): sinh bản gán nháp, theo ghi chú cho phép của Thầy (xem mục 0b).
+- **Claude (Anthropic):** hướng dẫn cài WSL, Docker, CVAT local; viết script gán nháp `tools/prelabel_pose.py`; soạn khung báo cáo này và chuyển bản Word sang Markdown. Mục 3, 4, 7 tôi tự điền, nhưng có dùng ví dụ và mẫu câu Claude đưa khi hướng dẫn: dòng `000000359340` ở mục 3, đoạn "phân vân" ở mục 4 và câu 3 của mục 7.
