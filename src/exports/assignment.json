@@ -1,0 +1,43 @@
+{
+ "mssv": "2A202603103",
+ "ten": "LeNgocDung",
+ "pool_version": "d04-k5-v2",
+ "cvat_user": "Dung",
+ "project": "d04-keypoint",
+ "persons": [
+  "000000294329.jpg",
+  "000000294379.jpg",
+  "000000349521.jpg",
+  "000000399983.jpg",
+  "000000493741.jpg",
+  "000000109010.jpg",
+  "000000157271.jpg",
+  "000000311497.jpg",
+  "000000359340.jpg",
+  "000000391222.jpg",
+  "000000007281.jpg",
+  "000000309169.jpg"
+ ],
+ "faces": [
+  "face_141135.jpg",
+  "face_257657.jpg",
+  "face_300399.jpg",
+  "face_137371.jpg",
+  "face_449454.jpg",
+  "face_380754.jpg",
+  "face_405456.jpg",
+  "face_560526.jpg"
+ ],
+ "tasks": {
+  "persons": {
+   "task_id": 1,
+   "job_id": 1,
+   "task_name": "persons-LeNgocDung"
+  },
+  "faces": {
+   "task_id": 2,
+   "job_id": 2,
+   "task_name": "faces-LeNgocDung"
+  }
+ }
+}
