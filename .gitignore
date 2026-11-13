@@ -1,0 +1,31 @@
+.env
+.env.*
+!.env.example
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.DS_Store
+Thumbs.db
+
+# Ảnh gốc và annotation COCO gốc không được commit
+/images/
+/data/
+val2017/
+train2017/
+annotations_trainval2017.zip
+person_keypoints_val2017.json
+person_keypoints_train2017.json
+*.jpg
+*.jpeg
+*.webp
+!report/individual/images/*.jpg
+!report/individual/images/*.jpeg
+!docs/images/*.jpg
+!src/lab/images/*.jpg
+
+# Ground truth chỉ coach giữ
+coach_gt/
+*_gt.json
+
+# Ban gan nhap cua may + anh xem truoc (anh COCO) - khong commit
+may_gan_nhap/
